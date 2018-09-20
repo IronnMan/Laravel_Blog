@@ -19,7 +19,7 @@ class RepliesController extends Controller
             'user_id' => auth()->id(),
         ]);
 
-        return redirect()->intended($this->redirectPath());
+        return back();
     }
 
     /**
