@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 // 文章路由
 Route::get('/threads', 'ThreadController@index');
 Route::get('/threads/{thread}', 'ThreadController@show');
+Route::post('/threads/{thread}/replies', 'RepliesController@store');
